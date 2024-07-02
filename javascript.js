@@ -1,15 +1,12 @@
-const outerdiv = document.createElement("div");
+
 for (let i = 0; i < 16; i++) {
-    console.log("test");
-    const newdiv = document.createElement("div");
-    newdiv.innerHTML = "hello world";
-    newdiv.className="innerDiv"
+    let outerdiv = document.createElement("div");
 
+    for (let j=0; j<16; j++){
+        let innerdiv = document.createElement("div");
 
-    if ((i + 1) % 4 == 0) {
-        const outerdiv = document.createElement("div");
-        outerdiv.appendChild(newdiv);
+        innerdiv.innerHTML = "test"
+        outerdiv.appendChild(innerdiv);
     }
-    outerdiv.className = "outerdiv";
-    document.getElementById("container").appendChild(outerdiv);
+    document.getElementById('container').appendChild(outerdiv);
 }
