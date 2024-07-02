@@ -1,0 +1,18 @@
+#container{
+    display: flex;
+    /* margin: 10px; */
+}
+
+.inner{
+    /* margin: 10px; */
+    font-size: larger;
+}
+
+.inner:hover{
+    background-color: red;
+
+}
+
+.outer{
+    /* display: flex; */
+}
