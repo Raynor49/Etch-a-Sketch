@@ -11,3 +11,7 @@ for (let i = 0; i < 16; i++) {
     }
     document.getElementById('container').appendChild(outerdiv);
 }
+
+function msg() {
+    alert("hi");
+}
