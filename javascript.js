@@ -1,5 +1,6 @@
 function buildBox(size) {
-
+    let container = document.getElementById('container');
+    console.log(container);
     for (let i = 0; i < size; i++) {
         let outerdiv = document.createElement("div");
         outerdiv.className = "outer";
@@ -8,9 +9,9 @@ function buildBox(size) {
 
             // innerdiv.innerHTML = "test";
             innerdiv.className = 'inner';
-            innerdiv.id = i;
-            innerdiv.style.height = (950/size) + 'px';
-            innerdiv.style.width = (950/size) + 'px';
+            innerdiv.id = i + '-' + j;
+            innerdiv.style.height = (container.clientHeight/size) + 'px';
+            innerdiv.style.width = (container.clientWidth/size) + 'px';
             outerdiv.appendChild(innerdiv);
             innerdiv.onmouseover = function () {
                 changeColor(innerdiv);
