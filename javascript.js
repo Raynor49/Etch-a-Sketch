@@ -5,7 +5,7 @@ for (let i = 0; i < 16; i++) {
     for (let j=0; j<16; j++){
         let innerdiv = document.createElement("div");
 
-        innerdiv.innerHTML = "test";
+        // innerdiv.innerHTML = "test";
         innerdiv.className = 'inner';
         outerdiv.appendChild(innerdiv);
     }
@@ -13,5 +13,5 @@ for (let i = 0; i < 16; i++) {
 }
 
 function msg() {
-    alert("hi");
+    let input = prompt("Please enter size");
 }
